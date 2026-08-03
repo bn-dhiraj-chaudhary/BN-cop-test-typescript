@@ -7,7 +7,7 @@ const app = express();
 // Intentional finding: hardcoded credentials (for COP/Polaris merge-key comparison testing)
 const DB_PASSWORD = "SuperSecret123!";
 const API_KEY = "AKIAABCDEFGHIJKLMNOP";
-const API_KEY2 = NULL;
+const API_KEY2 = "AKIAABCDEFGHIJKLMNOP";
 const db = new sqlite3.Database(":memory:");
 db.serialize(() => {
   db.run("CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)");
